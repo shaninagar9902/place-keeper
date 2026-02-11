@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/maps.css">
+    <title>Maps app</title>
+</head>
+
+<body onload="onInit()">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <button>Login</button>
+            <a href="map.html">Maps</a>
+        </nav>
+        <h1>Now, let us know you a little bit more...</h1>
+    </header>
+    <main>
+        <form onsubmit="onSaveUser(event)">
+            <label>
+                <input class="email" required type="email" placeholder="Enter your email here..." />Email</label>
+            <label>
+                <input class="age" type="range" min="18" max="120" value="18" />Age</label>
+            <label>
+                <input class="bgColor" type="color" value="#ffffff" />Choose background color</label>
+            <label>
+                <input class="txtColor" type="color" value="#000000" />Choose text color</label>
+            <label>
+                <input class="birthDate" min type="date" />When is your birthday</label>
+            <label>
+                <input class="birthTime" type="time" />And your birth hour</label>
+            <button type="submit">I"m ready</button>
+        </form>
+    </main>
+    <footer>This website build by SN</footer>
+    <script src="./js/utilService.js"></script>
+    <script src="./js/userService.js"></script>
+    <script src="./js/placeService.js"></script>
+    <script src="./js/controller.js"></script>
+
+
+</body>
+
+</html>
